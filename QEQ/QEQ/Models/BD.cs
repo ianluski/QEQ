@@ -20,6 +20,6 @@ namespace QEQ.Models
             conexion.Close();
         }
         #endregion
-        public static 
+    //    public static 
     }
 }
