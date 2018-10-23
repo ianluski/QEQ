@@ -5,7 +5,7 @@
     ViewBag.Title = "Login";
 }
 <div class="wrapper">
-    <form method="post" action="@Url.Action("Login","Home")">
+    <form method="post" action="@Url.Action("Login","HomeController")">
         <label>Mail:</label>
         @Html.TextBoxFor(x => x.Mail)
         <label>Contraseña:</label>

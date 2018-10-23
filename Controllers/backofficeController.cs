@@ -3,38 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using QEQ.Models;
 
 namespace QEQ.Controllers
 {
-    public class HomeController : Controller
+    public class backofficeController : Controller
     {
-        // GET: QEQ
+        // GET: backoffice
         public ActionResult Index()
         {
             return View();
+
         }
-
-       
-        public ActionResult Login()
+        public ActionResult Home()
         {
-
             return View();
         }
-        public ActionResult About()
+        public ActionResult BackofficePersonajes()
         {
-
             return View();
         }
-        public ActionResult Instrucciones()
+        public ActionResult BackofficePreguntas()
         {
-
             return View();
         }
-        public ActionResult Registro()
+        public ActionResult BackofficeCategoria()
         {
-
             return View();
         }
+
     }
 }
