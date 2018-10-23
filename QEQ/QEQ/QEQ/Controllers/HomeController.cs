@@ -9,31 +9,13 @@ namespace QEQ.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: QEQ
         public ActionResult Index()
         {
             return View();
         }
 
-       
         public ActionResult Login()
         {
-
-            return View();
-        }
-        public ActionResult About()
-        {
-
-            return View();
-        }
-        public ActionResult Instrucciones()
-        {
-
-            return View();
-        }
-        public ActionResult Registro()
-        {
-
             return View();
         }
     }

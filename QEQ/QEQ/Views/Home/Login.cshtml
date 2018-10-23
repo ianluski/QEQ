@@ -1,0 +1,27 @@
+﻿@using QEQ.Models
+@model Perfil
+
+@{
+    ViewBag.Title = "Login";
+}
+<div class="wrapper">
+    <form method="post" action="@Url.Action("Login","Home")">
+        <label>Mail:</label>
+        @Html.TextBoxFor(x => x.Mail)
+        <label>Contraseña:</label>
+        @Html.TextBoxFor(x => x.Pwd)
+        <input type="submit" value="Iniciar Sesion">
+    </form>
+</div>
+<style>
+    form {
+        display: inline-grid;
+        grid-template-columns: 1fr max-content;
+    }
+
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
