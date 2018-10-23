@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewBag.Title = "IniciarSesion";
+}
+
+<h2>IniciarSesion</h2>
+@using (Html.BeginForm(“InicioDeSesion”,”QEQ”, null, FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.Id)
+
+    Mail:< input type = "text" name = "Mail" >< br />
+    Contraseña: < input type = "text" name = "Pwd" >
+
+
+
+   < input type = "submit" value = "Aceptar" >
+    }
+

@@ -15,8 +15,8 @@ namespace QEQ.Controllers
             return View();
         }
 
-       
-        public ActionResult Login()
+        [HttpPost]
+        public ActionResult InicioDeSesion()
         {
 
             return View();
