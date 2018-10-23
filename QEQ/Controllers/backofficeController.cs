@@ -22,5 +22,14 @@ namespace QEQ.Controllers
         {
             return View();
         }
-     }
+        public ActionResult BackofficePreguntas()
+        {
+            return View();
+        }
+        public ActionResult BackofficeCategoria()
+        {
+            return View();
+        }
+
+    }
 }

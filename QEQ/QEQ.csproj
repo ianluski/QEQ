@@ -179,6 +179,11 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
+<<<<<<< HEAD:QEQ/QEQ.csproj
+=======
+    <Content Include="Views\Backoffice\BackofficeCategoria.cshtml" />
+    <None Include="Views\Backoffice\Home.cshtml" />
+>>>>>>> 3228d0bfe0fd8e29eec01ed2c891468fed11ee3c:QEQ/QEQ/QEQ.csproj
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -195,9 +200,13 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Backoffice\BackofficePersonajes.cshtml" />
     <Content Include="Views\Backoffice\BackofficePreguntas.cshtml" />
+<<<<<<< HEAD:QEQ/QEQ.csproj
     <Content Include="Views\Backoffice\Home.cshtml" />
     <Content Include="Views\Home\registro.cshtml" />
     <Content Include="Views\Home\instrucciones.cshtml" />
+=======
+    <Content Include="Views\Home\Login.cshtml" />
+>>>>>>> 3228d0bfe0fd8e29eec01ed2c891468fed11ee3c:QEQ/QEQ/QEQ.csproj
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
