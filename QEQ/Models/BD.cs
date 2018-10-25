@@ -8,7 +8,7 @@ namespace QEQ.Models
     public class BD
     {
         #region BD
-        private static string connectionstring = "server=10.128.8.16;Database=QEQC06;user id=QEQC06; password=QEQC06;Trusted_connection=True";
+        private static string connectionstring = "Server=10.128.8.16;Database=QEQC06;Uid=QEQC06; Pwd=QEQC06";
         private static SqlConnection conectar()
         {
             SqlConnection a = new SqlConnection(connectionstring);
@@ -20,20 +20,22 @@ namespace QEQ.Models
             conexion.Close();
         }
         #endregion
-        public static Perfil Login(string Mail, string Pwd)
+        public static bool Login(string Mail, string Pwd)
         {
+            bool perfil = false;
             SqlConnection Conn = conectar();
             SqlCommand Consulta = Conn.CreateCommand();
-            Consulta.CommandText = "login";
+            Consulta.CommandText = "sp_Login";
             Consulta.CommandType = System.Data.CommandType.StoredProcedure;
             Consulta.Parameters.AddWithValue("@mail", Mail);
             Consulta.Parameters.AddWithValue("@pass", Pwd);
             SqlDataReader Lector = Consulta.ExecuteReader();
 
-            Perfil perfil = new Perfil();
-            perfil.Mail = Lector["mail"].ToString();
-            perfil.Pwd = Lector["pass"].ToString();
-
+            if(Lector.Read() == true)
+            {
+                perfil = true;
+            }
+            
             return perfil;
            
         }

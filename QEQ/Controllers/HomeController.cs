@@ -14,12 +14,21 @@ namespace QEQ.Controllers
         {
             return View();
         }
-
-       
         public ActionResult Login()
         {
-
             return View();
+        }
+        [HttpPost]
+        public ActionResult ValidarLogin(Perfil Usuario)
+       {
+           bool Profile = BD.Login(Usuario.Mail, Usuario.Pwd);
+           if (Profile==true)
+            {
+               return RedirectToAction("Home", "Backoffice");
+            }
+            
+            return RedirectToAction("About", "Home");
+
         }
         public ActionResult About()
         {

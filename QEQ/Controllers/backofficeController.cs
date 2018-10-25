@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace QEQ.Controllers
 {
-    public class backofficeController : Controller
+    public class BackofficeController : Controller
     {
         // GET: backoffice
         public ActionResult Index()
